@@ -23,7 +23,8 @@ insert into stuffy (id, type, color, size, limbs)
     (8, 'Cat', 'Black', 'M', 3),
     (9, 'Aligator', 'Green', 'L', 4),
     (10, 'Kraken', 'Orange', 'XL', 10);
-    
+
+DROP USER IF EXISTS stuffy_user@localhost;    
 CREATE USER stuffy_user@localhost IDENTIFIED BY 'sesame';
 GRANT SELECT, INSERT, DELETE, UPDATE ON stuffy.* TO stuffy_user@localhost;
     

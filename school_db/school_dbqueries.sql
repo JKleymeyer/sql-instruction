@@ -80,3 +80,11 @@ left join enrolled e
 on e.studentid = s.id
 left join course c
 on e.courseid = c.id;
+
+-- selecting even number id student
+select * from student
+where id % 2 = 0;
+
+-- selecting odd number id student
+select * from student
+where id % 2 != 0;
